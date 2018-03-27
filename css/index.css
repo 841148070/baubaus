@@ -1,0 +1,255 @@
+/*scrollbar start*/
+::-webkit-scrollbar{width: 6px;}
+::-webkit-scrollbar-thumb{border-radius: 3px;background: #222222;}
+::-webkit-scrollbar-track{background: #CCCCCC;}
+
+
+/*****banner start*****/
+#banner{
+	margin: 60px auto;
+	width: 100%;
+	max-width: 1920px;
+}
+#banner .item img{
+	width: 100%;
+}
+#banner>a span{
+	font-size: 40px;
+	transition: .5s;
+	display: block;
+	opacity: 0;
+}
+#banner>a:hover span{
+	transform: scale(1,0.5);
+	opacity: 1;
+}
+#banner .ax{
+	width: 45px;
+	background-color: rgba(0,0,0,0.6);
+}
+#banner .swiper-button-prev{
+	background: url(../images/jiantou.png) no-repeat 1px 2px,rgba(0,0,0,0.5);
+}
+#banner .swiper-button-next{
+	background: url(../images/jiantou.png) no-repeat -36px 2px,rgba(0,0,0,0.5);
+}
+#banner .swiper-pagination-bullet-active{
+	background-color: #ffffff;
+}
+/*****banner end*****/
+
+/*****anli start*****/
+.anli{
+	padding: 60px 0 60px 0;
+}
+.anli h3{
+	height: 28px;
+	line-height: 28px;
+	font-size: 24px;
+	color: #444;
+	text-align: center;
+}
+.anli p{
+	width: 80%;
+	line-height: 19px;
+	font-size: 13px;
+	font-family: "微软雅黑";
+	color: #848484;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.anli .lei{
+	margin: 30px 0 30px 0;
+	/*overflow-x: auto;*/
+}
+.anli .lei ul{
+	min-width: 360px;
+	height: 35px;
+	padding-left: calc(50% - 172.5px);
+}
+.anli .lei ul li{
+	white-space: nowrap;
+	display: inline-block;
+	height: auto;
+	float: none;
+	width: 115px;
+	margin: 0!important;
+}
+.anli .lei ul li a{
+	display: block;
+	font-size: 12px;
+	padding: 8px 30px;
+	margin-right: 5px;
+	transition: 0.5s ease-out;
+	background: #FFFFFF;
+	border: 1px solid #d2d2d2;
+	margin-bottom: -10px;
+}
+.anli .lei ul li a:hover{
+	color: black;
+	border: 1px solid black;
+}
+/*.anli .gundong{
+	height: 330px;
+}*/
+/*****anli end*****/
+
+/*****about start*****/
+.about{
+	background: #F5F5F5;
+	padding: 70px 0 70px 0;
+}
+.about h3{
+	height: 28px;
+	line-height: 28px;
+	font-size: 24px;
+	color: #444;
+	margin: 0;
+}
+.about span{
+	display: block;
+	height: 19px;
+	line-height: 19px;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	color: #848484;
+	margin-bottom: 10px;
+}
+.about p{
+	line-height: 1.8;
+	margin-top: 30px;
+	font-size: 13px;
+	color: #848484;
+}
+.about a{
+	display: block;
+	width: 150px;
+	height: 30px;
+	line-height: 28px;
+	font-size: 16px;
+	border: 1px solid #dfdfdf;
+	margin-top: 50px;
+	text-align: center;
+	background: url(../images/jiantou.png) no-repeat 26px -97px;
+	transition: 0.5s;
+}
+.about a:hover{
+	border: 1px solid #b6b6b6;
+	background: url(../images/jiantou.png) no-repeat 26px -127px;
+}
+@media only screen and (max-width: 992px) {
+	.about .Le{
+		padding-bottom: 10px;
+	}
+	.about .Le img{
+		width: 100%;
+		margin: 0;
+	}
+	.about h3,span{
+		text-align: center;
+	}
+	.about a{
+		margin: 50px auto 0 auto;
+	}
+}
+/*****about end*****/
+
+/*****news start*****/
+.news{
+	padding-top: 70px;
+	overflow: hidden;
+}
+.news h3{
+	height: 28px;
+	line-height: 28px;
+	font-size: 24px;
+	color: #444;
+	text-align: center;
+	margin: 0;
+}
+.news ul li{
+	margin-top: 30px;
+}
+.news .eng{
+	display: block;
+	height: 19px;
+	line-height: 19px;
+	font-size: 13px;
+	font-family: "微软雅黑";
+	color: #848484;
+	text-align: center;
+	margin: 0 auto 10px auto;
+}
+.news .ims{
+	width: 180px;
+	height: 118px;
+	padding-right: 20px;
+}
+.news h4{
+	position: relative;
+}
+.news h4:after{
+	content: '';
+	width: 10px;
+	height: 1px;
+	background: #3c3c3c;
+	transition: 0.6s;
+	position: absolute;
+	bottom: 0;
+}
+.news h4:hover:after{
+	width: 100%;
+}
+.news h4 span{
+	display: block;
+	height: 30px;
+	line-height: 1.2;
+	font-size: 16px;
+	font-weight: 300;
+	color: #999;
+	text-align: left;
+}
+.news h4 a{
+	display: block;
+	line-height: 19px;
+	font-size: 16px;
+	padding-bottom: 20px;
+	color: #595959;
+	border-bottom: 1px solid #efefef;
+	text-shadow: rgba(0,0,0,.15) 0 0 1px;
+}
+.news .media-body p{
+	margin-bottom: 5px;
+	font-size: 13px;
+	color: #848484;
+}
+.news .more{
+	display: block;
+	width: 150px;
+	height: 30px;
+	line-height: 28px;
+	font-size: 16px;
+	border: 1px solid #dfdfdf;
+	margin: 70px auto;
+	text-align: center;
+	background: url(../images/jiantou.png) no-repeat 26px -97px;
+	transition: 0.5s;
+}
+.news .more:hover{
+	border: 1px solid #b6b6b6;
+	background: url(../images/jiantou.png) no-repeat 26px -127px;
+}
+@media only screen and (max-width: 768px) {
+	.news .ims{
+		width: 110px;
+		height: 100px;
+		padding-right: 10px;
+	}
+	.news li .media-body p{
+		margin-bottom: 5px;
+		font-size: 13px;
+		color: #848484;
+	}
+}
+/*****news end*****/

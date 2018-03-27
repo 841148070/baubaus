@@ -1,0 +1,189 @@
+.gundong li{
+	padding: 0 5px 0 5px;
+}
+.gundong .carousel {
+  padding-bottom: 30px;
+  width: calc(100% - ($button-spacing * 2));
+}
+.gundong .carousel[data-shift="1"] .carousel-inner > .item {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.gundong .carousel .carousel-inner > .item.row {
+  margin: 0;
+}
+.gundong .carousel .carousel-control {
+  background: none;
+  color: transparent;
+  overflow: hidden;
+  text-shadow: none;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  width: 30px;
+}
+.gundong .carousel .carousel-control:before {
+  color: #444;
+  font-family: 'Glyphicons Halflings';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 30px;
+}
+.gundong .carousel .carousel-control:after {
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  content: '';
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  width: 100%;
+}
+
+.gundong .carousel .carousel-control.left {
+  width: 40px;
+  height: 40px;
+  left: 50%;
+  top: 100%;
+  margin-left: -90px;
+}
+.gundong .carousel .carousel-control.left i{
+	display: block;
+	width: 40px;
+	height: 20px;
+	background: url(../images/jiantou.png) no-repeat 0 -49px;
+	transition: 0.5s;
+}
+.gundong .carousel .carousel-control.left:hover i{
+	background: url(../images/jiantou.png) 0 -70px;
+}
+.gundong .carousel .carousel-control.right {
+	width: 40px;
+	height: 40px;
+    right: 50%;
+    top: 100%;
+    margin-right: -80px;
+}
+.gundong .carousel .carousel-control.right i{
+	display: block;
+	width: 40px;
+	height: 20px;
+	background: url(../images/jiantou.png) no-repeat -37px -49px;
+	transition: 0.5s;
+}
+.gundong .carousel .carousel-control.right:hover i{
+	background: url(../images/jiantou.png) -37px -70px;
+}
+.gundong .More{
+	display: block;
+	width: 60px;
+	height: 40px;
+	line-height: 40px;
+	position: absolute;
+	top: 97%;
+	left: 50%;
+	margin-left: -30px;
+	border: 1px solid #dfdfdf;
+	background: url(../images/icon-more.png) no-repeat 0 -9px;
+	transition: 0.5s;
+	box-sizing: content-box;
+}
+.gundong .More:hover{
+	border: 1px solid #666;
+	background: url(../images/icon-more.png) no-repeat 0 -53px;
+}
+.gundong{
+	padding-bottom: 40px;
+}
+.gundong ul li h4{
+	padding: 20px 0 20px 0;
+	border-bottom: 1px solid #E0E0E0;
+	transition: 0.6s;
+	text-shadow: rgba(0,0,0,.15) 0 0 1px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.gundong ul li h4:hover{
+	border-bottom: 1px solid #666666;
+}
+.gundong ul li h4 a{
+	display: block;
+	font-size: 16px;
+	color: #666;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.gundong ul li>a{
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+.gundong ul li>a img{
+	transition: 0.6s;
+}
+.gundong ul li>a:hover img{
+	transform: scale(1.1,1.1);
+}
+.gundong ul li>a:after{
+	content: '+';
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	line-height: 45px;
+	font-size: 40px;
+	font-family: "微软雅黑";
+	color: #ffffff;
+	border: 1px solid #FFFFFF;
+	border-radius: 50px;
+	text-align: center;
+	margin-left: -26px;
+	opacity: 0;
+	transition: 0.6s;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	z-index: 20;
+}
+@media only screen and (max-width: 768px) {
+	.gundong ul li>a:after{
+		width: 40px;
+		height: 40px;
+		line-height: 34px;
+		font-size: 34px;
+		margin-left: -21px;
+	}
+}
+.gundong ul li>a:hover:after{
+	opacity: 1;
+	margin-top: -26px;
+	top: 50%;
+}
+.gundong ul li>a:before{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0);
+	transition: 0.6s;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+}
+.gundong ul li>a:hover:before{
+	background: rgba(0,0,0,.5);
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.gundong ul li h4 a{
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.gundong ul li h4 a{
+		font-size: 12px;
+	}
+}

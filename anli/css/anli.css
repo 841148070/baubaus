@@ -1,0 +1,157 @@
+/*scrollbar start*/
+.lei::-webkit-scrollbar{height: 6px;}
+.lei::-webkit-scrollbar-thumb{border-radius: 3px;background: #C0C0C0;}
+.lei::-webkit-scrollbar-track{background: #EEEEEE;}
+/*scrollbar end*/
+body{
+	background: #F2F2F2;
+}
+.sbanner{
+	margin-top: 60px;
+	position: relative;
+}
+.sbanner h2{
+	width: 100%;
+	height: 48px;
+	line-height: 48px;
+	font-size: 40px;
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: calc(50% - 24px);
+}
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+	.sbanner h2{
+		font-size: 30px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.sbanner h2{
+		font-size: 24px;
+	}
+}
+
+/*****Tab start*****/
+.Tab{
+	background: white;
+}
+.Tab .row>div{
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+.Tab .nav-justified{
+	width: 336px;
+	margin: 0 auto;
+}
+.Tab li a{
+	white-space: nowrap;
+	width: auto;
+}
+.Tab li a{
+	display: block;
+	padding: 14px;
+	font-size: 16px;
+	color: #90939b;
+}
+.Tab li a:hover{
+	background: none;
+}
+@media only screen and (max-width: 768px) {
+	.Tab li{
+		float: left!important;
+	}
+}
+@media only screen and (max-width: 992px) {
+	.Tab .search{
+		padding-bottom: 15px;
+	}
+}
+.Tab .search{
+	margin-top: 7px;
+	position: relative;
+}
+.Tab .search input{
+	width: 100%;
+	padding: 6px 50px 6px 15px;
+	border: 1px solid #e4eaec;
+	border-radius: 200px;
+	transition: .3s;
+}
+.Tab .search a{
+	position: absolute;
+	right: 10px;
+	top: calc(50% - 10px);
+}
+
+.cont ul{
+	padding: 30px 0 30px 0;
+	min-height: 346px;
+}
+.cont ul li{
+	margin-bottom: 22px;
+}
+.cont ul li h4{
+	padding: 20px;
+	text-shadow: rgba(0,0,0,.15) 0 0 1px;
+	background: white;
+	border-bottom: 1px solid #E0E0E0;
+}
+.cont ul li h4 a{
+	display: block;
+	font-size: 16px;
+	color: #666;
+	text-overflow: ellipsis;
+}
+.cont ul li>a{
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+.cont ul li>a img{
+	transition: 0.6s;
+}
+.cont ul li>a:hover img{
+	transform: scale(1.1,1.1);
+}
+.cont ul li>a:after{
+	content: '+';
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	line-height: 45px;
+	font-size: 40px;
+	font-family: "微软雅黑";
+	color: #ffffff;
+	border: 1px solid #FFFFFF;
+	border-radius: 50px;
+	text-align: center;
+	margin-left: -26px;
+	opacity: 0;
+	transition: 0.6s;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	z-index: 20;
+}
+.cont ul li>a:hover:after{
+	opacity: 1;
+	margin-top: -26px;
+	top: 50%;
+}
+.cont ul li>a:before{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0);
+	transition: 0.6s;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+}
+.cont ul li>a:hover:before{
+	background: rgba(0,0,0,.5);
+}
+/*****Tab end*****/
